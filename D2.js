@@ -41,8 +41,9 @@ if(y % 5===0) {
 
 console.log("es4");
 
-const p = 8;
-const q = 8;
+const p = 17;
+const q = 9;
+
 if(p  === 8 || q === 8 || p + q  === 8  || p - q === 8){
   console.log("è verificato");
 } 
@@ -139,7 +140,12 @@ if(typeof(aa) == "number"){
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
-
+const bubba = 7
+if (bubba % 2 === 0) {
+  console.log(bubba , "è pari");
+} else{
+  console.log(bubba , "è dispari");
+}
 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -186,10 +192,14 @@ const me = {
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const numbers = []
+numbers.push(1,2,3,4,5,6,7,8,9,10)
+console.log(numbers)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+numbers.pop()
+numbers.push(100)
+console.log(numbers)
